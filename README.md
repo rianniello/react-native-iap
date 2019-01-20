@@ -126,6 +126,23 @@ You should remove this before running `pod install` and follow the manual instal
     ```
     <uses-permission android:name="com.android.vending.BILLING" />
     ```
+#### Windows
+(https://github.com/Microsoft/react-native-windows)
+
+### Manual installation windows
+
+Full process is documented in official [React Native plugin for Universal Windows](https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md) repo: https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md
+
+1. Run `npm install --save react-native-iap`
+2. Open your Visual Studio solution.
+3. Right-click the solution in the Solution Explorer
+4. Select Add -> Existing Project
+5. Choose the `.csproj` of the dependency from the Explorer window. Dependency will be in `node_modules\react-native-iap\windows\ReactNativeIap`
+6. Right-click the Universal Windows App project in the Solution Explorer
+7. Select Add -> Reference
+8. Choose the `ReactNativeIap` project.
+9. Open MainPage.cs
+10. Add the `new ReactNativeIap.RNIapPackage()` to the `Packages` list in MainPage.cs
 
 ## Usage
 You can look in the RNIapExample folder to try the example. Below is basic implementation which is also provided in RNIapExample project.
