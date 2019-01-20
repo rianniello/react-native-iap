@@ -36,10 +36,11 @@ namespace ReactNativeIap
         {
         }
 
-
         [ReactMethod]
-        public void test(ICallback callback)
+        public void getProducts(string[] products, IPromise promise)
         {
+           var product = "S1";
+           promise.Resolve(products);
         }
     }
 }
