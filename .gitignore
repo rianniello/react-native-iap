@@ -37,8 +37,12 @@ build/
 .gradle
 local.properties
 *.iml
+RNIapExample/android/app/src/main/gen/
+android/src/main/gen/
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
+
+
